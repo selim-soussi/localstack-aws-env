@@ -1,0 +1,556 @@
+    1  ls
+    2  clear
+    3  exit
+    4  gcloud auth application-default login
+    5  nano
+    6  terraform -v
+    7  sudo apt-get update && sudo apt-get install -y curl apt-transport-https ca-certificates gnupg
+    8  mkdir ubuntu
+    9  cd ubuntu/
+   10  sudo apt-get update && sudo apt-get install -y curl apt-transport-https ca-certificates gnupg
+   11  echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+   12  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+   13  sudo apt-get update && sudo apt-get install -y google-cloud-sdk
+   14  exec -l $SHELL
+   15  cd ubuntu/
+   16  ls
+   17  which terraform
+   18  chmod +x ./usr/bin/terraform
+   19  exit
+   20  cd ubuntu/
+   21  ls
+   22  cd terrafor-test/
+   23  ls
+   24  nano main.tf 
+   25  terraform init
+   26  cd ubuntu/
+   27  cd terrafor-test/
+   28  ls
+   29  terraform init
+   30  terraform init -upgrade
+   31  cd ubuntu/
+   32  docker ps
+   33  cd terrafor-test/
+   34  ls
+   35  cat terraform.tfstate 
+   36  cat mail 
+   37  cat main.tf 
+   38  terraform init
+   39  terraform apply
+   40  nano main.tf 
+   41  terraform init
+   42  terraform apply
+   43  nano main.tf 
+   44  rm main.tf 
+   45  nano main.tf
+   46  terraform init
+   47  terraform apply -auto-approve
+   48  ls
+   49  cat terraform.tfstate.backup 
+   50  touch file.txt
+   51  aws s3 cp example.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566
+   52  snap info aws-cli
+   53  aws s3 cp example.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566
+   54  sudo snap install aws-cli
+   55  aws s3 cp example.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566
+   56  aws s3 cp file.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566
+   57  sudo snap install aws-cli
+   58  sudo apt install awscli
+   59  sudo snap install aws-cli --classic
+   60  aws s3 cp file.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566
+   61  aws s3 cp file.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566 --no-verify-ssl --region us-east-1 --profile localstack
+   62  aws configure --profile localstack
+   63  aws s3 cp file.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566 --profile localstack
+   64  ls
+   65  aws s3 ls s3://my-test-bucket-123456 --endpoint-url=http://localhost:4566 --profile localstack
+   66  nano file.txt 
+   67  aws s3 ls s3://my-test-bucket-123456 --endpoint-url=http://localhost:4566 --profile localstack
+   68  aws s3 cp file.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566 --profile localstack
+   69  aws s3 cat file.txt s3://my-test-bucket-123456/ --endpoint-url=http://localhost:4566 --profile localstack
+   70  aws s3 ls s3://my-test-bucket-123456 --endpoint-url=http://localhost:4566 --profile localstack
+   71  aws s3 cp s3://my-test-bucket-123456/file.txt ./downloaded_file.txt --endpoint-url=http://localhost:4566 --profile localstack
+   72  ls
+   73  cat downloaded_file.txt 
+   74  aws s3 cp s3://my-test-bucket-123456/file.txt ./temp.txt --endpoint-url=http://localhost:4566 --profile localstack
+   75  echo "New line appended at $(date)" >> temp.txt
+   76  aws s3 cp ./temp.txt s3://my-test-bucket-123456/file.txt --endpoint-url=http://localhost:4566 --profile localstack
+   77  ls
+   78  cat temp.txt 
+   79  ls
+   80  rm temp.txt
+   81  aws s3 ls s3://my-test-bucket-123456 --endpoint-url=http://localhost:4566 --profile localstack
+   82  ls
+   83  echo "New line appended at $(date)" >> temp.txt
+   84  ls
+   85  aws s3 cp ./temp.txt s3://my-test-bucket-123456/newfile.txt --endpoint-url=http://localhost:4566 --profile localstack
+   86  ls
+   87  aws s3 ls s3://my-test-bucket-123456 --endpoint-url=http://localhost:4566 --profile localstack
+   88  curl https://sdk.cloud.google.com | bash
+   89  exec -l $SHELL
+   90  cd ubuntu/
+   91  curl https://registry.terraform.io
+   92  ls
+   93  cd terrafor-test/
+   94  curl https://registry.terraform.io
+   95  gcloud init
+   96  gcloud cheat-sheet
+   97  gcloud cheat-sheet > cheatgcloud.txt
+   98  cat cheatgcloud.txt 
+   99  gsutil ls -p terraformdemo1-468214
+  100  gsutil mb -p terraformdemo1-468214 gs://my-unique-bucket-name/
+  101  gsutil mb -p terraformdemo1-468214 gs://selim-terraform-bucket-1234/
+  102  gsutil cp ./file.txt gs://selim-terraform-bucket-1234/file.txt
+  103  cd ubuntu/
+  104  ls
+  105  docker run hello-world
+  106  source ~/.venvs/localstack-env/bin/activate
+  107  localstack start
+  108  $ docker run --rm -it -p 4566:4566 -p 4510-4559:4510-4559 localstack/localstack
+  109  localstack start
+  110  clear
+  111  docker
+  112  docker run
+  113  docker volume create n8n_data
+  114  docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+  115  clear
+  116  ls
+  117  cd ubuntu/
+  118  ls
+  119  cd terrafor-test/
+  120  ls
+  121  history
+  122  history > historycmd1.txt
+  123  ls
+  124  wget https://github.com/AmenDhouibi/Ansible-Terraform
+  125  ls
+  126  file Ansible-Terraform 
+  127  ls
+  128  cat Ansible-Terraform 
+  129  git clone https://github.com/AmenDhouibi/Ansible-Terraform
+  130  rm Ansible-Terraform 
+  131  git clone https://github.com/AmenDhouibi/Ansible-Terraform
+  132  ls
+  133  cd Ansible-Terraform/
+  134  ls
+  135  terraform init
+  136  terraform plan
+  137  terraform apply
+  138  # sudo lsof -i :8080
+  139  terraform apply
+  140  docker version
+  141  sudo lsof -i :8080
+  142  docker ps
+  143  docker ps -a | grep 8080
+  144  docker container prune
+  145  terraform apply
+  146  docker ps -a
+  147  sudo netstat -tulnp | grep :8080
+  148  sudo ss -tulnp | grep :8080
+  149  ls
+  150  cat main.tf
+  151  nano main.tf
+  152  mv main.tf main1.tf
+  153  rm main.tf
+  154  ls
+  155  touch main.tf
+  156  nano main.tf 
+  157  terraform init
+  158  mv main1.tf file.txt
+  159  terraform init
+  160  terraform plan
+  161  terraform apply
+  162  ls
+  163  cat site.yaml 
+  164  ssh -p 2200 root@localhost
+  165  ssh -p 2201 root@localhost
+  166  ls
+  167  cat terraform.tfstate
+  168  clear
+  169  cd ..
+  170  ssh://git@gitlab.example.com/user/project.git
+  171  sudo systemctl restart ssh
+  172  ssh
+  173  clear
+  174  sudo mkdir -p /srv/gitlab
+  175  ls
+  176  cd /srv/gitlab/
+  177  export GITLAB_HOME=/srv/gitlab
+  178  ls
+  179  sudo docker run --detach   --hostname gitlab.example.com   --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com:8929'; gitlab_rails['gitlab_shell_ssh_port'] = 2424"   --publish 8929:8929 --publish 2424:22   --name gitlab   --restart always   --volume $GITLAB_HOME/config:/etc/gitlab   --volume $GITLAB_HOME/logs:/var/log/gitlab   --volume $GITLAB_HOME/data:/var/opt/gitlab   --shm-size 256m   gitlab/gitlab
+  180  external_url "http://gitlab.example.com:8929"
+  181  gitlab-ctl reconfigure
+  182  gitlab
+  183  cd ..
+  184  exit
+  185  clear
+  186  apt install gitlab
+  187  sudo apt install gitlab
+  188  curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+  189  sudo EXTERNAL_URL="http://gitlab.example.com" apt install gitlab-ce
+  190  sudo EXTERNAL_URL="https://gitlab.com/selim.soussi-group" apt install gitlab-ce
+  191  curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+  192  sudo EXTERNAL_URL="http://gitlab.local" apt install gitlab-ce
+  193  ls
+  194  gitlab
+  195  git
+  196  gitlab
+  197  sudo cat /etc/gitlab/initial_root_password
+  198  sudo nano /etc/hosts
+  199  sudo gitlab-ctl reconfigure
+  200  sudo nano /etc/gitlab/gitlab.rb
+  201  external_url 'http://gitlab.local'
+  202  sudo gitlab-ctl reconfigure
+  203  gitlab-ctl
+  204  sudo gitlab-ctl
+  205  cd ubuntu/
+  206  sudo apt install glab
+  207  brew install glab
+  208  glab auth login
+  209  clear
+  210  cd ubuntu/
+  211  docker
+  212  docker run
+  213  sudo service docker restart
+  214  cd /etc/NetworkManager/system-connections/
+  215  cd \etc
+  216  cd /etc
+  217  ls
+  218  cd /NetworkManager
+  219  cd /NetworkManager/system-connections/
+  220  cd /system-connections/
+  221  cd network
+  222  ls
+  223  cd if-pre-up.d/
+  224  ls
+  225  file ethtool 
+  226  ./ethtool 
+  227  cd ..
+  228  if-up.d/ethtool 
+  229  cd if-up.d/
+  230  ls
+  231  ./ethtool 
+  232  cd ...
+  233  cd ..
+  234  ls
+  235  cd ..
+  236  ls
+  237  cat networks
+  238  cat profile
+  239  sudo ls -l /etc/NetworkManager/system-connections/
+  240  ls
+  241  cd ubuntu/
+  242  ls
+  243  cd terrafor-test/
+  244  ls
+  245  cd ..
+  246  ifconfig
+  247  sudo apt install net-tools
+  248  ifconfig
+  249  netsh wlan show profile
+  250  cd /etc/NetworkManager/system-connections/
+  251  bash
+  252  cd ubuntu/
+  253  clear
+  254  sudo docker pull kiwenlau/hadoop:1.0
+  255  dokcer run
+  256  docker ps
+  257  dokcer run -P
+  258  pip install docker 
+  259  sudo apt install docker
+  260  docker
+  261  docker run
+  262  docker run -p
+  263  docker run -P "commentaire"
+  264  docker ps
+  265  cd ubuntu/
+  266  clea
+  267  clear
+  268  docker pull liliasfaxi/hadoop-cluster:latest
+  269  docker network create --driver=bridge hadoop
+  270  ls
+  271  docker run -itd --net=hadoop -p 9870:9870 -p 8088:8088 -p 7077:7077 -p
+  272  16010:16010 --name hadoop-master --hostname hadoop-master
+  273  liliasfaxi/hadoop-cluster:latest
+  274  docker run -itd --net=hadoop -p 9870:9870 -p 8088:8088 -p 7077:7077 -p 16010:16010 --name hadoop-master --hostname hadoop-master liliasfaxi/hadoop-cluster:latest
+  275  docker run -itd -p 8040:8042 --net=hadoop --name hadoop-worker1 --hostname hadoop-worker1 liliasfaxi/hadoop-cluster:latest
+  276  docker run -itd -p 8041:8042 --net=hadoop --name hadoop-worker2 --hostname hadoop-worker2 liliasfaxi/hadoop-cluster:latest
+  277  docker ps
+  278  docker exec -it hadoop-master bash
+  279  cd ubuntu/
+  280  clear
+  281  mkdir terraform_first_project
+  282  cd terraform_first_project/
+  283  vi providers.tf
+  284  export GITLAB_ACCESS_TOKEN="your_personal_access_token"
+  285  gitlab-rake gitlab:tokens:analyze
+  286  export GITLAB_ACCESS_TOKEN="glft-V59ES2k9v5ZxxCQ_or1N"
+  287  export GITLAB_USERNAME="selim.soussi"
+  288  terraform init   -backend-config="address=https://gitlab.com/api/v4/projects/<YOUR_PROJECT_ID>/terraform/state/<YOUR_STATE_NAME>"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/<YOUR_PROJECT_ID>/terraform/state/<YOUR_STATE_NAME>/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/<YOUR_PROJECT_ID>/terraform/state/<YOUR_STATE_NAME>/lock"   -backend-config="username=${selim.soussi}"   -backend-config="password=${glft-V59ES2k9v5ZxxCQ_or1N}"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  289  terraform init     -backend-config="address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME"     -backend-config="lock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"     -backend-config="unlock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"     -backend-config="username=selim.soussi"     -backend-config="password=$GITLAB_ACCESS_TOKEN"     -backend-config="lock_method=POST"     -backend-config="unlock_method=DELETE"     -backend-config="retry_wait_min=5"
+  290  ls
+  291  cat providers.tf 
+  292  ls
+  293  vi .gitlab-ci.yml
+  294  terraform plan
+  295  terraform plan -lock=false
+  296  terraform apply
+  297  terraform apply -lock=false
+  298  ls
+  299  cat errored.tfstate 
+  300  terraform init -migrate-state \    -backend-config="address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME"     -backend-config="lock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"     -backend-config="unlock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"     -backend-config="username=selim.soussi"     -backend-config="password=$GITLAB_ACCESS_TOKEN"     -backend-config="lock_method=POST"     -backend-config="unlock_method=DELETE"     -backend-config="retry_wait_min=5"
+  301  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username=selim.soussi"   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  302  terraform plan
+  303  echo $GITLAB_ACCESS_TOKEN
+  304  ls
+  305  cat errored.tfstate 
+  306  export TF_STATE_NAME="prod-state"
+  307  echo $GITLAB_ACCESS_TOKEN
+  308  export GITLAB_ACCESS_TOKEN="glft-V59ES2k9v5ZxxCQ_or1N"
+  309  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username=selim.soussi"   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  310  echo $GITLAB_ACCESS_TOKEN
+  311  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/72539603/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username=selim.soussi"   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  312  curl --header "PRIVATE-TOKEN: $GITLAB_ACCESS_TOKEN"      "https://gitlab.com/api/v4/projects/72539603"
+  313  echo $GITLAB_ACCESS_TOKEN
+  314  export GITLAB_ACCESS_TOKEN="glpat-k_mueejIawtVegUh_J9zaW86MQp1OmhsMDBsCw.01.120h86rgv"
+  315  curl -u "selim.soussi:$GITLAB_ACCESS_TOKEN" https://gitlab.com/api/v4/projects/72539603
+  316  git remote add origin https://gitlab.com/selim.soussi-group/selim.soussi-project.git
+  317  git init
+  318  git remote add origin https://gitlab.com/selim.soussi-group/selim.soussi-project.git
+  319  git branch -M main
+  320  git push -uf origin main
+  321  curl -u "selim.soussi:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects?membership=true&per_page=100"
+  322  curl -u "selim.soussi:$GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects/selim.soussi-group%2Fselim.soussi-project"
+  323  curl -u "selim.soussi:$GITLAB_ACCESS_TOKEN" https://gitlab.com/api/v4/user
+  324  curl -u "selim.soussi:$GITLAB_ACCESS_TOKEN" https://gitlab.com/api/v4/selim.soussi
+  325  export GITLAB_ACCESS_TOKEN="glpat-k_mueejIawtVegUh_J9zaW86MQp1OmhsMDBsCw.01.120h86rgv"
+  326  curl -u "selim.soussi:$GITLAB_ACCESS_TOKEN" https://gitlab.com/api/v4/user
+  327  echo "$GITLAB_ACCESS_TOKEN"
+  328  curl --header "PRIVATE-TOKEN: $GITLAB_ACCESS_TOKEN" https://gitlab.com/api/v4/user
+  329  curl --header "PRIVATE-TOKEN: $GITLAB_ACCESS_TOKEN" "https://gitlab.com/api/v4/projects?membership=true&per_page=100"
+  330  export PROJECT_ID=72539603
+  331  export TF_STATE_NAME="prod-state"
+  332  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username=selim.soussi"   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  333  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username=selim.soussi"   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  334  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username=glpat"   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  335  curl -X GET   -H "Authorization: Basic $(echo -n glpat:$GITLAB_ACCESS_TOKEN | base64)"   "https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME"
+  336  ls
+  337  terraform init -migrate-state   -backend-config="address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME"   -backend-config="lock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="unlock_address=https://gitlab.com/api/v4/projects/$PROJECT_ID/terraform/state/$TF_STATE_NAME/lock"   -backend-config="username="   -backend-config="password=$GITLAB_ACCESS_TOKEN"   -backend-config="lock_method=POST"   -backend-config="unlock_method=DELETE"   -backend-config="retry_wait_min=5"
+  338  ls
+  339  cat errored.tfstate 
+  340  cat providers.tf 
+  341  clear
+  342  rm -a
+  343  ls | rm
+  344  rm (ls)
+  345  ls
+  346  rm errored.tfstate providers.tf 
+  347  ls
+  348  clear
+  349  vi terraform-bot.yaml
+  350  tctl create terraform-bot.yaml
+  351  tctl
+  352  curl -sSL https://github.com/temporalio/temporal/releases/latest/download/temporal_linux_amd64.tar.gz -o temporal.tar.gz
+  353  tar -xzf temporal.tar.gz
+  354  ls
+  355  tar -xzf temporal.tar.gz
+  356  gunzip temporal.tar.gz 
+  357  head temporal.tar.gz
+  358  ls
+  359  sudo mv tctl /usr/local/bin/
+  360  chmod +x /usr/local/bin/tctl
+  361  cd /usr/local/bin
+  362  ls
+  363  file kubectl 
+  364  tar -xzf tctl.tar.gz
+  365  tctl --version
+  366  apt install tctl
+  367  cd ~
+  368  curl -L -o tctl.tar.gz https://github.com/temporalio/temporal/releases/latest/download/temporal_linux_amd64.tar.gz
+  369  ls
+  370  tar -xzf tctl.tar.gz
+  371  ls
+  372  mv tctl.tar.gz tctl.tar
+  373  ls
+  374  tar -xzf tctl.tar
+  375  file tctl.tar
+  376  cat tctl.tar 
+  377  tar -xf tctl.tar
+  378  ls
+  379  exit
+  380  cd ubuntu/
+  381  ls
+  382  cd terraform_first_project/
+  383  ls
+  384  clear
+  385  cd ..
+  386  git status
+  387  mkdir  terraform_infra_with_docker
+  388  cd terraform_infra_with_docker/
+  389  git status
+  390  git init
+  391  ls
+  392  git status
+  393  git remote add 
+  394  git remote add origin main
+  395  git config
+  396  git status
+  397  git add .
+  398  git commit -m "init"
+  399  git config --global user.name "selim-soussi"
+  400  git add .
+  401  git commit -m "init"
+  402  touch main.tf
+  403  vi main.tf
+  404  vi terraform.tf
+  405  terraform init
+  406  terraform apply
+  407  git init
+  408  git add README.md
+  409  git commit -m "first commit"
+  410  git branch -M main
+  411  git remote add origin https://github.com/selim-soussi/create_terraform_infr_with_docker.git
+  412  git push -u origin main
+  413  git add .
+  414  git status
+  415  git commit -m "all"
+  416  git push 
+  417  git push --set-upstream origin main
+  418  ls -lah
+  419  git branch
+  420  git remote -v
+  421  git branch -m master main
+  422  git push --set-upstream origin main
+  423  git remote remove origin
+  424  git remote add origin https://github.com/selim-soussi/create_terraform_infr_with_docker.git
+  425  git remote -v
+  426  git push --set-upstream origin main
+  427  vscode
+  428  VS
+  429  code
+  430  docker ps
+  431  docker stop f4717c338229
+  432  ls
+  433  docker ps
+  434  docker stop 51798dae92f9
+  435  docker stop 5553bdc8248e
+  436  docekr ps
+  437  docker ps
+  438  terraform destroy
+  439  ls
+  440  docker ps
+  441  cd ubuntu/
+  442  chmod 600 ~/.n8n/config
+  443  docker run -e N8N_RUNNERS_ENABLED=true docker.n8n.io/n8nio/n8n:latest
+  444  docker run -it --rm `
+  445    -p 5678:5678 `
+  446  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n:latest
+  447  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n:latest
+  448  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n:latest n8n start
+  449  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n:latest start
+  450  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n n8n start
+  451  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n
+  452  docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   -e N8N_RUNNERS_ENABLED=true   docker.n8n.io/n8nio/n8n   n8n --tunnel
+  453  clear
+  454  gcloud
+  455  cd ubuntu/
+  456  gcloud components update
+  457  gcloud init
+  458  terraform -- version
+  459  gcloud auth application-default login
+  460  set GOOGLE_APPLICATION_CREDENTIALS="C:\Users\GIGABYTE\Downloads\terraformdemo1-468214-2178eef60750.json"
+  461  EXPORT GOOGLE_APPLICATION_CREDENTIALS="C:\Users\GIGABYTE\Downloads\terraformdemo1-468214-2178eef60750.json"
+  462  export GOOGLE_APPLICATION_CREDENTIALS="C:\Users\GIGABYTE\Downloads\terraformdemo1-468214-2178eef60750.json"
+  463  echo $GOOGLE_APPLICATION_CREDENTIALS
+  464  mkdir gcp-terraform-project
+  465  cd gcp-terraform-project/
+  466  vi main.tf
+  467  terraform init
+  468  vi main.tf
+  469  terraform init
+  470  vi main.tf
+  471  terraform init
+  472  terraform plan
+  473  gcloud auth application-default login
+  474  terraform plan
+  475  echo $GOOGLE_APPLICATION_CREDENTIALS
+  476  export GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/Users/GIGABYTE/Downloads/terraformdemo1-468214-2178eef60750.json"
+  477  terraform plan
+  478  terraform plan -out
+  479  terraform apply
+  480  ls
+  481  cat terraform.tfstate 
+  482  gcloud beta billing accounts list
+  483  gcloud beta billing projects describe terraformdemo1-468214
+  484  docker run -itd --name localstack   -p 4566:4566 -p 4571:4571   -e SERVICES=s3,ec2,lambda   -e DEBUG=1   localstack/localstack
+  485  docker
+  486  docker -v
+  487  docker run -itd --name localstack   -p 4566:4566 -p 4571:4571   -e SERVICES=s3,ec2,lambda   -e DEBUG=1   localstack/localstack
+  488  sudo apt update && sudo apt install awscli -y
+  489  ls
+  490  cat main.tf 
+  491  mkdir aws-terra
+  492  cd aws-terra/
+  493  vi main_localstack.tf
+  494  docker run -itd --name localstack -p 4566:4566 -e SERVICES=s3 localstack/localstack
+  495  dockerps
+  496  docker ps
+  497  docker stop ee47d4495d96 c70169eb9efc
+  498  docker ps
+  499  dockerps docker run -itd --name localstack > -p 4566:4566 > -e SERVICES=s3 > localstack/localstack
+  500  ls
+  501  docker run -itd --name localstack   -p 4566:4566   -e SERVICES=s3   localstack/localstack
+  502  docker run -itd --name localstack   -p 4566:4566   -e SERVICES=s3   localstack/localstack
+  503  ls
+  504  rm -e -p
+  505  file -e
+  506  rm \-e
+  507  rm /-e
+  508  ls
+  509  cat main_localstack.tf 
+  510  sudo apt update && sudo apt install awscli -y
+  511  aws configure
+  512  terraform init
+  513  docker run -itd --name localstack   -p 4566:4566 -p 4571:4571   -e SERVICES=s3   -e DEBUG=1   localstack/localstack
+  514  docker run -itd --name localstack
+  515  docker run localstack
+  516  docker run -itd --name localstack   -p 4566:4566 -p 4571:4571   -e SERVICES=s3,ec2,lambda   -e DEBUG=1   localstack/localstack
+  517  ls
+  518  docker stop localstack
+  519  docker rm localstack
+  520  docker run -itd --name localstack   -p 4566:4566 -p 4571:4571   -e SERVICES=s3,ec2,lambda   -e DEBUG=1   localstack/localstack
+  521  terraform init
+  522  \
+  523  export TF_REGISTRY_CLIENT_TIMEOUT=300
+  524  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+  525  terraform init
+  526  terraform apply -auto-approve
+  527  ls
+  528  vi main_localstack.tf 
+  529  terraform init
+  530  sudo apt install dos2unix -y
+  531  dos2unix main_localstack.tf
+  532  terraform init
+  533  ls
+  534  vi main_localstack.tf
+  535  terraform init
+  536  terraform apply -auto-approve
+  537  vi main_localstack.tf
+  538  terraform apply -auto-approve
+  539  terraform init
+  540  terraform apply -auto-approve
+  541  docker run -itd --name localstack   -p 4566:4566   -e SERVICES=s3   -e DEBUG=1   localstack/localstack
+  542  aws configure
+  543  rm main_localstack.tf 
+  544  vi main.tf
+  545  terraform init
+  546  terraform apply -auto-approve
+  547  aws --endpoint-url=http://localhost:4566 s3 ls
+  548  vi main.tf
+  549  terraform init
+  550  terraform apply -auto-approve
+  551  aws --endpoint-url=http://localhost:4566 s3 ls
+  552  terraform destroy -auto-approve
+  553  aws --endpoint-url=http://localhost:4566 s3 ls
+  554  terraform apply -auto-approve
+  555  aws --endpoint-url=http://localhost:4566 s3 ls
+  556  history > cmdhistory
